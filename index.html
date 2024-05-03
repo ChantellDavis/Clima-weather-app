@@ -7,26 +7,29 @@
   </head>
   <body>
     <header>
-      <h1>Clima Clima</h1>
+      <h1 class="siteTitle">Clima <span class="siteTitleTwo">Clima</span></h1>
     </header>
     <main>
       <form>
-        <input
+        <input class="searchForm"
           type="search"
           placeholder="enter a city..."
           autocomplete="off"
           autofocus="on"
         />
-        <input type="submit" name="search" />
+        <input class="searchFormButton" type="submit" name="search" />
       </form>
-      <h2>New York</h2>
-      <h3>Monday 8:44</h3>
-      <p>Sunny Humidity: 71%, Wind: 3.6km/h</p>
-      <h3>☀️75°F</h3>
+      <h2 class="currentCity">New York</h2>
+      <h3 class="currentDate">Monday 8:44</h3>
+      <p class="weatherCondition">Sunny 
+        <div class="weatherConditionLabel">Humidity: <span class="weatherConditionData">71%</span>,
+        </div>
+         <div class="weatherConditionLabelTwo">Wind: <span class="weatherConditionDataTwo">3.6km/h</span></div></p>
+      <h3 class="currentTemp"><span class="weatherEmoji">☀️</span>75°F</h3>
     </main>
     <footer>
       This project was coded by
-      <a href="https://github.com/" target="_blank">Chantell Davis</a>is
+      <a href="https://github.com/" target="_blank">Chantell Davis</a> is
       <a href="https://github.com/ChantellDavis/Clima" target="_blank"
         >open-sourced on GitHub</a
       >, and hosted on
