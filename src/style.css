@@ -2,6 +2,17 @@ body {
   background-color:  #E9D3DB;
 }
 
+.siteTitle {
+text-align: center;
+font-size: 45px;
+font-family: "Cinzel", serif;
+color: rgb(72, 71, 71);
+}
+
+.siteTitleTwo{
+    color: white;
+    opacity: 60%;
+}
 .mainBox {
     background-color: rgb(248, 247, 246);
     max-width: 600px;
@@ -12,19 +23,63 @@ body {
     box-shadow:10px 30px 50px rgba(65,50,100,.08) ;
 }
 
-.searchForm {
-    width: 85%;
-    padding: 15px;
+.searchFormInput {
+    width: 75%;
+    padding: 18px ;
     border: none;
     border-radius: 15px;
     background-color: #E9D3DB;
-    font-size: 15px;
+    font-size: 16px;
+    margin-left: 8px;
 }
 
 .searchFormButton {
-    padding: 13px 18px;
+    width: 20%;
+    padding: 18px 30px;
     border-radius: 15px;
     border: none;
     background-color: rgb(174, 174, 174);
-    margin-right: 6px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.currentCity, .currentDate {
+    text-align: center;
+}
+
+.currentCity {
+    margin: 50px 15px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.currentDate {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.weatherCondition{
+    margin-top: 55px;
+}
+.weatherCondition, .weatherConditionLabel, .weatherConditionLabelTwo {
+    margin-left: 425px;
+    font-size: 20px;
+}
+
+.weatherConditionData, .weatherConditionDataTwo {
+    font-weight: 900;
+    color:#95546a;
+}
+
+.currentTemp {
+    font-size: 40px;
+    position: relative;
+  top: -130px;
+  left: 200px;
+}
+
+.weatherEmoji {
+    position: relative;
+  right: 300px;
+
 }
