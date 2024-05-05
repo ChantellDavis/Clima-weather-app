@@ -11,7 +11,9 @@ color: rgb(72, 71, 71);
 
 .siteTitleTwo{
     color: white;
-    opacity: 60%;
+    opacity: 30%;
+    position: relative;
+    right:35px;
 }
 .mainBox {
     background-color: rgb(248, 247, 246);
@@ -50,12 +52,12 @@ color: rgb(72, 71, 71);
 .currentCity {
     margin: 50px 15px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 55px;
 }
 
 .currentDate {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .weatherCondition{
@@ -63,23 +65,36 @@ color: rgb(72, 71, 71);
 }
 .weatherCondition, .weatherConditionLabel, .weatherConditionLabelTwo {
     margin-left: 425px;
-    font-size: 20px;
+    font-size: 21px;
 }
 
-.weatherConditionData, .weatherConditionDataTwo {
+.weatherConditionData, .weatherConditionDataTwo, .weatherCondition {
     font-weight: 900;
-    color:#95546a;
+    color:#dd638c;
 }
 
 .currentTemp {
-    font-size: 40px;
+    font-size: 55px;
     position: relative;
   top: -130px;
-  left: 200px;
+  left: 155px;
+}
+
+.degree {
+    font-size:25px;
+    position: relative;
+  bottom: 18px;
+  
 }
 
 .weatherEmoji {
     position: relative;
-  right: 300px;
+  right: 45px;
+  font-size: 55px ;
 
+}
+
+footer {
+    text-align: center;
+    font-size: 17px;
 }
