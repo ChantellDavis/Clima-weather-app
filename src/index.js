@@ -1,4 +1,9 @@
-
+function search(event) {
+    event.preventDefault();
+    let searchFormInput = document.querySelector("#search-Form-Input")
+    let currentCity = document.querySelector("#current-City")
+currentCity.innerHTML = (searchFormInput.value)
+}
 
 function formatDate(date) {
 let day = date.getDay();
@@ -26,6 +31,9 @@ if (minutes < 10) {
 let formattedDate = days[day];
 return `${formattedDate} ${hours}:${minutes}`
 };
+
+let searchForm = document.querySelector("#search-Form");
+searchForm.addEventListener("submit",search)
 
 let currentDate = document.querySelector("#current-Date");
 let currentTime = new Date();
