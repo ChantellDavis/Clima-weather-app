@@ -6,8 +6,8 @@ function displayWeather(response) {
   currentTemp.innerHTML = Math.round (temperature)
   let weatherCondition = document.querySelector("#weather-Condition");
   weatherCondition.innerHTML = (response.data.condition.temperature.description);
-//   let weatherConditionData = document.querySelector("#weather-Condition-Data");
-// weatherConditionData.innerHTML = response.data.temperature.humidity;
+  let weatherConditionData = document.querySelector("#weather-Condition-Data");
+weatherConditionData.innerHTML = (response.data.temperature.humidity);
 // let weatherConditionDataTwo = document.querySelector("#weather-Condition-Data-Two");
 // weatherConditionDataTwo.innerHTML = response.data.wind.speed;
 
