@@ -10,8 +10,9 @@ function displayWeather(response) {
   weatherConditionData.innerHTML = `${response.data.temperature.humidity}%` ;
   let weatherConditionDataTwo = document.querySelector("#weather-Condition-Data-Two");
   weatherConditionDataTwo.innerHTML = `${response.data.wind.speed} Km/h`;
-  let icon = `<img
-            src="${response.condition.icon_url}"
+  let icon = document.querySelector("#icon")
+  icon.innerHTML = `<img
+            src="${response.data.condition.icon_url}"
             class="weatherEmoji"
             id="weather-Emoji" />`
   }
