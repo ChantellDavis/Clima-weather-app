@@ -1,5 +1,7 @@
 body {
-  background-color:  #E9D3DB;
+  background: linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .siteTitle {
@@ -30,9 +32,10 @@ color: rgb(72, 71, 71);
     padding: 18px ;
     border: none;
     border-radius: 15px;
-    background-color: #E9D3DB;
-    font-size: 16px;
+    background: linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+    font-size: 25px;
     margin-left: 8px;
+    color: #F5E2E2;
 }
 
 .searchFormButton {
@@ -40,9 +43,10 @@ color: rgb(72, 71, 71);
     padding: 18px 30px;
     border-radius: 15px;
     border: none;
-    background-color: rgb(174, 174, 174);
+    background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
     margin-left: 12px;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .currentCity, .currentDate {
