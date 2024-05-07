@@ -1,9 +1,20 @@
 function displayWeather(response) {
   let currentTemp = document.querySelector("#current-Temp")
-   let temperature = response.data.temperature.current
+   
   let currentCity = document.querySelector("#current-City")
   currentCity.innerHTML =  response.data.city  
   currentTemp.innerHTML = Math.round (temperature)
+  let weatherCondition = document.querySelector("#weather-Condition");
+ weatherCondition.innerHTML = response.data.condition.description;
+let weatherConditionData = document.querySelector("#weather-Condition-Data");
+
+
+let weatherConditionDataTwo = document.querySelector("#weather-Condition-Data-Two");
+weatherConditionData.innerHTML = response.data.temperature.humidity;
+let temperature = response.data.temperature.current
+ weatherConditionDataTwo.innerHTML = response.data.wind.speed;
+
+
 }
 
 function searchCity(city){
@@ -16,6 +27,7 @@ function search(event) {
     event.preventDefault();
     let searchFormInput = document.querySelector("#search-Form-Input")
     searchCity (searchFormInput.value);
+
 }
 
 
