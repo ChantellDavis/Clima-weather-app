@@ -15,7 +15,9 @@ let apiKey = "50a8380f4oe8265a54940c506tc9b3e0"
 let city = searchFormInput.value
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
 axios.get(apiUrl).then(displayWeather);
+
 }
+
 function formatDate(date) {
 let day = date.getDay();
 let hours = date.getHours();
@@ -41,10 +43,11 @@ if (minutes < 10) {
 
 let formattedDate = days[day];
 return `${formattedDate} ${hours}:${minutes}`
-};
+}
 
 let searchForm = document.querySelector("#search-Form");
-searchForm.addEventListener("submit",search)
+searchForm.addEventListener("submit",search);
+
 
 let currentDate = document.querySelector("#current-Date");
 let currentTime = new Date();
