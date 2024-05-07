@@ -7,9 +7,9 @@ function displayWeather(response) {
   let weatherCondition = document.querySelector("#weather-Condition");
   weatherCondition.innerHTML = (response.data.condition.description);
   let weatherConditionData = document.querySelector("#weather-Condition-Data");
-  weatherConditionData.innerHTML = response.data.temperature.humidity ;
+  weatherConditionData.innerHTML = `${response.data.temperature.humidity}%` ;
   let weatherConditionDataTwo = document.querySelector("#weather-Condition-Data-Two");
-  weatherConditionDataTwo.innerHTML = (response.data.wind.speed);
+  weatherConditionDataTwo.innerHTML = `${response.data.wind.speed} Km/h`;
   }
 
 function searchCity(city) {
