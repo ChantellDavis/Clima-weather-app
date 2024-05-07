@@ -52,7 +52,7 @@ color: rgb(72, 71, 71);
 .currentCity {
     margin: 50px 15px;
     margin-bottom: 0;
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .currentDate {
@@ -71,10 +71,16 @@ color: rgb(72, 71, 71);
 .weatherConditionData, .weatherConditionDataTwo, .weatherCondition {
     font-weight: 900;
     color:#dd638c;
+    
+}
+
+.data {
+    position: relative;
+    top: 50px;
 }
 
 .currentTemp {
-    font-size: 55px;
+    font-size: 70px;
     position: relative;
   top: -130px;
   left: 155px;
@@ -84,13 +90,15 @@ color: rgb(72, 71, 71);
     font-size:25px;
     position: relative;
   bottom: 18px;
+  top: -30px;
+  left: -18px;
   
 }
 
 .weatherEmoji {
     position: relative;
   right: 45px;
-  font-size: 55px ;
+  font-size: 70px ;
 
 }
 

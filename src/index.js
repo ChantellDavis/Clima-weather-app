@@ -2,11 +2,17 @@ function displayWeather(response) {
   let currentTemp = document.querySelector("#current-Temp")
   let currentCity = document.querySelector("#current-City")
   currentCity.innerHTML =  response.data.city  
+   let temperature = response.data.temperature.current
   currentTemp.innerHTML = Math.round (temperature)
-  let temperature = response.data.temperature.current
-}
+  let weatherCondition = document.querySelector("#weather-Condition");
+  weatherCondition.innerHTML = (response.data.condition.
+description);
 
-function searchCity(city){
+
+  console.log (response.data)
+ }
+
+function searchCity(city) {
 let apiKey = "50a8380f4oe8265a54940c506tc9b3e0"
  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
 axios.get(apiUrl).then(displayWeather); 
@@ -16,7 +22,6 @@ function search(event) {
     event.preventDefault();
     let searchFormInput = document.querySelector("#search-Form-Input")
     searchCity (searchFormInput.value);
-
 }
 
 
