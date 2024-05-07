@@ -1,22 +1,24 @@
 function displayWeather(response) {
   let currentTemp = document.querySelector("#current-Temp")
-  let temperature = Math.round (response.data.temperature.current)
+   let temperature = response.data.temperature.current
   let currentCity = document.querySelector("#current-City")
   currentCity.innerHTML =  response.data.city  
-  currentTemp.innerHTML = temperature
+  currentTemp.innerHTML = Math.round (temperature)
+}
+
+function searchCity(city){
+let apiKey = "50a8380f4oe8265a54940c506tc9b3e0"
+ let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
+axios.get(apiUrl).then(displayWeather); 
 }
 
 function search(event) {
     event.preventDefault();
     let searchFormInput = document.querySelector("#search-Form-Input")
-   
-
-let apiKey = "50a8380f4oe8265a54940c506tc9b3e0"
-let city = searchFormInput.value
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
-axios.get(apiUrl).then(displayWeather);
-
+    searchCity (searchFormInput.value);
 }
+
+
 
 function formatDate(date) {
 let day = date.getDay();
@@ -47,6 +49,8 @@ return `${formattedDate} ${hours}:${minutes}`
 
 let searchForm = document.querySelector("#search-Form");
 searchForm.addEventListener("submit",search);
+
+searchCity ("Queens")
 
 
 let currentDate = document.querySelector("#current-Date");
